@@ -41,9 +41,9 @@
 
 ## 🛠️ 使用方法
 
-### 1️⃣ Fork并star 项目
+### 1️⃣ Fork、star 项目
 
-点击右上角 Fork
+点击右上角 Fork和Star
 
 ---
 
