@@ -147,7 +147,8 @@
         "title": "可灵",
         "url": "https://klingai.kuaishou.com/",
         "desc": "快手AI视频生成",
-        "data-desc": "快手旗下可灵 AI 视频生成工具，文生视频、图生视频"
+        "data-desc": "快手旗下可灵 AI 视频生成工具，文生视频、图生视频",
+        "icon": "icons/logos/可灵.svg"
       },
       {
         "title": "Suno",
