@@ -149,7 +149,7 @@ Worker 会代理以下资源：
 
 7. 复制token并保存本地任意位置，忘记需要重新申请
 8. 编辑admin.html文件,修改 const HARDCODED_REPO   = '你的用户名/Simple-Nav-Page';
-9. 打开后台（你的导航页网址/admin）
+9. 打开后台{后台地址为【你的导航页网址/admin】，必须在完成下方（6️⃣ 部署到github pages或Cloudflare Pages后才能打开后）}
 10. 第一次需要输入token和自定义短密码，后续可通过短密码登录（换设备和浏览器后需要重新输入token）
 11. 修改后台内容后点击保存到github
 <img width="1194" height="604" alt="导航编辑器 (18 06 2026 21_37)" src="https://github.com/user-attachments/assets/e6ab1926-ba82-4d67-8de3-b94d10c12d5c" />
