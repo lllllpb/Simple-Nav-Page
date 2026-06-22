@@ -43,6 +43,24 @@ function toggleNetMode() {
 }
 window.toggleNetMode = toggleNetMode;
 
+/* ── 回到顶部 ── */
+function injectBackTopBtn() {
+  if (document.getElementById('backTopBtn')) return;
+  const btn = document.createElement('button');
+  btn.id        = 'backTopBtn';
+  btn.className = 'back-top-btn';
+  btn.innerHTML = '↑';
+  btn.setAttribute('aria-label', '回到顶部');
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  document.body.appendChild(btn);
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 300);
+  }, { passive: true });
+}
+
 function updateNetToggleBtn() {
   const btn = document.getElementById('netToggleBtn');
   if (!btn) return;
@@ -404,6 +422,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   injectNetToggleBtn();
   updateNetToggleBtn();
+  injectBackTopBtn();
   // ── 白天 / 夜间模式 ────────────────────────────────────────
 const themeBtn = document.getElementById('themeToggleBtn');
 const savedTheme = localStorage.getItem('theme');
@@ -417,7 +436,7 @@ themeBtn.addEventListener('click', () => {
   themeBtn.textContent = isNight ? '🌙' : '☀️';
   localStorage.setItem('theme', isNight ? 'night' : 'day');
 });
-
+   
   // 引擎触发器点击
   document.getElementById('engineTrigger').addEventListener('click', () => {
     toggleEnginePanel();
