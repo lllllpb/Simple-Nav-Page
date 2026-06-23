@@ -409,7 +409,7 @@ function bindTouchTooltip() {
 
 /* ── 随机背景 ── */
 function changeBackground() {
-  document.getElementById('bgLayer').style.backgroundImage = `url('./labi.png')`;
+  document.getElementById('bgLayer').style.backgroundImage = `url('./meinv.jpg')`;
 }
 
 /* ── 入口 ── */
