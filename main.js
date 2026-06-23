@@ -4,7 +4,7 @@
 
 // ── 图标 & 背景 配置 ────────────────────────────────────────
 const FAVICON_PROVIDER = 'google';
-const PROXY = '';
+const PROXY = 'https://navigation.lpb.us.kg';
 
 function withProxy(originUrl) {
   if (!PROXY) return originUrl;
